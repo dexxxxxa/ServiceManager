@@ -471,24 +471,6 @@ namespace Service_Manager
             }
         }
 
-        #region 
-
-        [DllImport("gdi32.dll")]
-        static extern IntPtr DeleteDC(IntPtr hDc);
-        [DllImport("gdi32.dll")]
-        static extern IntPtr CreateCompatibleBitmap(IntPtr hdc, int nWidth, int nHeight);
-        [DllImport("gdi32.dll")]
-        static extern IntPtr CreateCompatibleDC(IntPtr hdc);
-        [DllImport("gdi32.dll")]
-        static extern IntPtr SelectObject(IntPtr hdc, IntPtr bmp);
-        [DllImport("user32.dll")]
-        public static extern IntPtr GetWindowDC(IntPtr ptr);
-        [DllImport("user32.dll")]
-        public static extern bool PrintWindow(IntPtr hwnd, IntPtr hdcBlt, uint nFlags);
-
-
-        #endregion
-
         private void lightThemeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (darkToolStripMenuItem.Checked == true)
@@ -581,7 +563,7 @@ namespace Service_Manager
             foreach (Control ctrl in controls)
             {
                 float newSize = ctrl.Font.Size + change;
-                if (newSize >= 6) 
+                if (newSize >= 6)
                 {
                     ctrl.Font = new Font(ctrl.Font.FontFamily, newSize, ctrl.Font.Style);
                 }
@@ -619,6 +601,23 @@ namespace Service_Manager
             }
         }
 
+        #region 
+
+        [DllImport("gdi32.dll")]
+        static extern IntPtr DeleteDC(IntPtr hDc);
+        [DllImport("gdi32.dll")]
+        static extern IntPtr CreateCompatibleBitmap(IntPtr hdc, int nWidth, int nHeight);
+        [DllImport("gdi32.dll")]
+        static extern IntPtr CreateCompatibleDC(IntPtr hdc);
+        [DllImport("gdi32.dll")]
+        static extern IntPtr SelectObject(IntPtr hdc, IntPtr bmp);
+        [DllImport("user32.dll")]
+        public static extern IntPtr GetWindowDC(IntPtr ptr);
+        [DllImport("user32.dll")]
+        public static extern bool PrintWindow(IntPtr hwnd, IntPtr hdcBlt, uint nFlags);
+
+
+        #endregion
 
     }
 }

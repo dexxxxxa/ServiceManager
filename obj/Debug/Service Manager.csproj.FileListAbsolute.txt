@@ -1,0 +1,10 @@
+D:\projects\Service Manager\bin\Debug\Service Manager.exe.config
+D:\projects\Service Manager\bin\Debug\Service Manager.exe
+D:\projects\Service Manager\bin\Debug\Service Manager.pdb
+D:\projects\Service Manager\obj\Debug\Service Manager.csproj.AssemblyReference.cache
+D:\projects\Service Manager\obj\Debug\Service_Manager.Form1.resources
+D:\projects\Service Manager\obj\Debug\Service_Manager.Properties.Resources.resources
+D:\projects\Service Manager\obj\Debug\Service Manager.csproj.GenerateResource.cache
+D:\projects\Service Manager\obj\Debug\Service Manager.csproj.CoreCompileInputs.cache
+D:\projects\Service Manager\obj\Debug\Service Manager.exe
+D:\projects\Service Manager\obj\Debug\Service Manager.pdb
